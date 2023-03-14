@@ -15,28 +15,45 @@
 
 header{
     align-items: baseline;
-    display: flex;
     justify-content: space-between;
     position: sticky;
-    gap: 4rem;
+    gap: 6rem;
     padding: 2rem 3rem;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
-    width: 6rem;
+    width: 5rem;
+    display: flex;
+    align-content: center;
+    margin-top: 0.01rem;
+}
+
+.link{
+     display: flex;
+    margin-top: 2rem;
 }
 
 nav ul a {
     text-decoration: none;
     color: black;
     font-size: large;
-    margin-top: 6rem;
     list-style-type: none;
 }
 ul{
 text-align: center;
 list-style: none;
 display: flex;
+gap: 4rem;
 }
+
+header a{
+     text-transform: uppercase;
+}
+header a:hover {
+  color: blue;
+}
+
 </style>
