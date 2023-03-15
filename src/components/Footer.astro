@@ -1,6 +1,10 @@
 <footer class="grid_footer">
   <div class="item1">
     <h2 class="footer_title">Contact</h2>
+    <div class="logo">
+      <a href=""><img src="img/fb_logo.webp" /></a>
+      <a href=""><img src="img/fb_logo.webp" /></a>
+    </div>
     <p>contact@kunekbh.com</p>
   </div>
   <div class="vl"></div>
@@ -15,7 +19,7 @@
   footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem;
+    padding: 2rem 3rem 2rem 3rem;
     background-color: #090284;
     color: #f5f0e3;
   }
@@ -38,11 +42,22 @@
 
   .footer_title {
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     line-height: 3rem;
+    margin-top: 30px;
+    color: #f5f0e3;
   }
 
   p {
-    line-height: 3rem;
+    line-height: 3.5rem;
+    color: #f5f0e3;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80px;
+    column-gap: 10px;
+    margin: 10px 0px 10px 0px;
   }
 </style>
