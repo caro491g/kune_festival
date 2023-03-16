@@ -2,15 +2,33 @@
 const { title, date } = Astro.props;
 ---
 
-<article>
-  <div class="container">
-    <img src="img/accelerationism.webp" alt="" />
-    <div class="centered">{title}</div>
-    <div class="top-right">{date}</div>
-  </div>
-</article>
+<li>
+  <article>
+    <figure class="container">
+      <img src="img/accelerationism.webp" alt="" height="250" width="250" />
+      <div class="centered">{title}</div>
+      <div class="top-right">{date}</div>
+    </figure>
+  </article>
+</li>
 
 <style>
+  article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  figure {
+    display: grid;
+    grid: "stack";
+    place-items: start;
+    order: -1;
+  }
+
+  figure > * {
+    grid-area: stack;
+  }
   .container {
     position: relative;
     text-align: center;
