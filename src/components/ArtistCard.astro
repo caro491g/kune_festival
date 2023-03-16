@@ -33,6 +33,22 @@ const { title, date } = Astro.props;
     position: relative;
     text-align: center;
     color: white;
+    transition: transform 0.2s; /* Animation */
+  }
+
+  .container:hover {
+    transform: scale(1.05);
+    color: #090284;
+    transition: 0.3s;
+    image-resolution: ;
+  }
+
+  .container:hover img {
+    opacity: 0.6;
+  }
+
+  .container:hover .top-right {
+    color: white;
   }
 
   .centered {
@@ -40,11 +56,8 @@ const { title, date } = Astro.props;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .centered:hover {
-    color: #090284;
-    transition: 0.3s;
+    font-size: 20px;
+    text-transform: uppercase;
   }
 
   .top-right {
