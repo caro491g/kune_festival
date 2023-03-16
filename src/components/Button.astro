@@ -1,9 +1,9 @@
 ---
-const { variant = "primary", size = "medium" } = Astro.props;
+const { variant = "primary", size = "medium", placement = "index"} = Astro.props;
 ---
 
 
-<button data-variant={variant} data-size={size}>
+<button data-variant={variant} data-size={size} data-placement={placement}>
   <slot />
 </button>
 
@@ -22,12 +22,18 @@ const { variant = "primary", size = "medium" } = Astro.props;
    
 
   }
-
   /* Sizes */
   [data-size="medium"] {
     font-size: 16px;
     padding-block: 1.2rem;
     padding-inline: 2rem;
+  }
+
+  [data-placement="index"]{
+margin-left: 42%;
+margin-top: 2rem;
+margin-bottom: 2rem;
+
   }
 
 
