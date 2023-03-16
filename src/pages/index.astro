@@ -3,9 +3,8 @@ import "../styles/layout.css";
 import Header from "../components/Header.astro";
 import Lineup from "../components/Lineup.astro";
 import Button from "../components/Button.astro";
-
-
 import Footer from "../components/Footer.astro";
+import Indexpictures from "../components/Indexpictures.astro";
 ---
 
 <html lang="en">
@@ -21,7 +20,8 @@ import Footer from "../components/Footer.astro";
     <p></p>
 
     <Lineup />
-		<Button variant="primary" size="medium">Tickets</Button>
+		<Button variant="primary" size="medium" placement="index">Tickets</Button> 
+    <Indexpictures />
 
     <Footer />
   </body>
