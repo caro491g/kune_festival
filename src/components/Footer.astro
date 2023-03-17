@@ -1,3 +1,7 @@
+---
+import Button from "./Button.astro";
+---
+
 <footer class="grid_footer">
   <div class="item1">
     <h2 class="footer_title">Contact</h2>
@@ -12,6 +16,7 @@
     <h2 class="footer_title">Kune Festival 2023</h2>
     <p>Ungdomsøen, 1433 København</p>
     <p>19 - 23th July</p>
+    <Button variant="secondary" size="medium" placement="lineup">Tickets</Button>
   </div>
 </footer>
 
@@ -22,10 +27,12 @@
     padding: 2rem 3rem 2rem 3rem;
     background-color: #090284;
   }
-  .grid_footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 10px;
+  @media (min-width: 800px) {
+    .grid_footer {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 10px;
+    }
   }
   .item1 {
     grid-column: 1 / span 2;
@@ -34,9 +41,12 @@
     grid-column: 4 / span 6;
     text-align: center;
   }
-  .vl {
-    border-left: 1px solid #f5f0e3;
-    height: 250px;
+
+  @media (min-width: 800px) {
+    .vl {
+      border-left: 1px solid #f5f0e3;
+      height: 250px;
+    }
   }
 
   .footer_title {

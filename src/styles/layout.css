@@ -11,8 +11,11 @@ img {
 }
 
 html {
+  height: 100%;
   background-color: #f5f0e3;
 }
+
+/* Farver */
 .color1 {
   color: #090284;
 }
@@ -21,6 +24,23 @@ h1 {
   font-family: Dance;
   src: url(Dance.ttf);
   text-align: center;
+  margin: 40px 0px 60px 0px;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: Dance;
+  src: url(Dance.ttf);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+button {
+  display: inline-block;
+  transition: scale 33ms ease-in-out;
 }
 
 .container {
