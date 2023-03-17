@@ -47,10 +47,13 @@ button {
 }
 
 .container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+    position: relative;
+    text-align: center;
+    color: #f5f0e3;
+    font-family: Dance;
+
+
+  }
 .centered {
   position: absolute;
   top: 50%;
