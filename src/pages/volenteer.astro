@@ -2,17 +2,16 @@
 import InfoCard from "../components/InfoCard.astro";
 import InfoCard2 from "../components/InfoCard2.astro";
 import Header from "../components/Header.astro";
+import Stortbillede from "../components/Stortbillede.astro";
 import "../styles/layout.css";
 ---
 
 <Header/>
 
-
-<div class="container">
-<img src="img/VOLENTEER.webp" alt="forsidebillede">
-<div class="centered">VOLENTEER</div>
-</div>
-
+<Stortbillede
+imgPath="img/VOLENTEER.webp"
+overskrift="VOLENTEER"
+/>
 
 <InfoCard2 variant="primary" placement="lefttext"
 imgPath="img/Net2.webp"

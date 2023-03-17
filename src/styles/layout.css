@@ -46,7 +46,10 @@ button {
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: #f5f0e3;
+    font-family: Dance;
+
+
   }
 .centered {
     position: absolute;
