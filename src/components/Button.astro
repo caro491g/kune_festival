@@ -17,31 +17,62 @@ const { variant = "primary", size = "medium", placement = "index" } = Astro.prop
     color: #f5f0e3;
     padding: 5rem;
     display: flex;
-    border-radius: 1rem;
-  }
-  /* Sizes */
-  [data-size="medium"] {
-    font-size: 16px;
-    padding-block: 1.2rem;
-    padding-inline: 2rem;
-  }
-
-  [data-placement="index"] {
-    margin-left: 42%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    border-radius: 15px;
   }
 
   [data-variant="secondary"] {
     background: #f5f0e3;
     color: #090284;
     display: flex;
-    border-radius: 1rem;
+    border-radius: 15px;
   }
 
-  [data-placement="lineup"] {
-    margin-left: 43%;
+  [data-variant="tertiary"] {
+    background: #f5f0e3;
+    color: #090284;
+    display: flex;
+    border-radius: 15px;
+    border: solid #090284 0.1rem;
+  }
+
+  /* Sizes */
+  [data-size="medium"] {
+    font-size: 16px;
+    padding-block: 1.2rem;
+    padding-inline: 2.5rem;
+  }
+
+  [data-size="small"] {
+    font-size: 14px;
+    padding-block: 0.6rem;
+    padding-inline: 1.8rem;
+  }
+
+  [data-size="large"] {
+    font-size: 20px;
+    padding-block: 0.6rem;
+    padding-inline: 1.8rem;
+  }
+
+  /* Placement */
+
+  [data-placement="index"] {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    align-items: center;
+    margin: 0 auto;
+  }
+  [data-placement="footer"] {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  [data-placement="tickets"] {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    margin: 0 auto;
   }
 </style>
