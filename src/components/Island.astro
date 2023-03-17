@@ -1,5 +1,6 @@
 <div class="grid_container">
   <div>
+    <p>Where?</p>
     <h2>19 - 23th JULY UNGDOMS0EN</h2>
     <p>A 5-day electronic music festival that takes place on an island 30 minutes away from Copenhagen. A one-of-its-kind celebration of the Scandinavian underground culture. A playground with five stages, two art galleries, and multiple art installations. An intimate, holistic experience with access to a camping ground, food area, dipping spot, and unique sunsets. A true hidden gem.</p>
   </div>
@@ -9,12 +10,30 @@
 </div>
 
 <style>
-  .grid_container {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+  @media (min-width: 800px) {
+    .grid_container {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      padding: 70px 50px 70px 50px;
+      margin: 80px 0px 100px 0px;
+      background-color: #e1dacb;
+    }
   }
 
   img {
     border-radius: 22px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  p {
+    line-height: 1.8;
+    max-width: 65ch;
+    margin-top: 50px;
+    font-size: 17px;
+    margin-right: 30px;
   }
 </style>

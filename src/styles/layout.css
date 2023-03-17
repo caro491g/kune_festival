@@ -15,6 +15,10 @@ html {
   background-color: #f5f0e3;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Farver */
 .color1 {
   color: #090284;
@@ -36,6 +40,10 @@ h2 {
   font-family: Dance;
 }
 
+title {
+  font-family: "Montserrat", sans-serif;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -44,6 +52,7 @@ p {
 button {
   display: inline-block;
   transition: scale 33ms ease-in-out;
+  border: none;
 }
 
 .container {
