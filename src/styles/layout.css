@@ -20,21 +20,20 @@ html {
   color: #090284;
 }
 
+@font-face {
+  font-family: Dance;
+  src: url(Dance.ttf);
+}
+
 h1 {
-  @font-face {
-    font-family: Dance;
-    src: url(Dance.ttf);
-    text-align: center;
-    margin: 40px 0px 60px 0px;
-    font-size: 45px;
-  }
+  font-family: Dance;
+  text-align: center;
+  margin: 40px 0px 60px 0px;
+  font-size: 45px;
 }
 
 h2 {
-  @font-face {
-    font-family: Dance;
-    src: url(Dance.ttf);
-  }
+  font-family: Dance;
 }
 
 p {
@@ -48,13 +47,13 @@ button {
 }
 
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
+  position: relative;
+  text-align: center;
+  color: white;
+}
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
