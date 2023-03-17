@@ -1,0 +1,59 @@
+---
+const { title, body, imgPath} = Astro.props;
+
+---
+<div class="grid_1-1">
+<figure>
+<img src={imgPath} alt="" height="200" width="200" />
+</figure>
+<article>
+<a href="#0">{title}</a>
+<p>{body}</p>
+</article>
+
+
+</div>
+
+
+
+
+<style>
+
+ [data-placement="lefttext"]{
+text-align: left;
+
+ }
+
+ [data-placement="righttext"]{
+text-align: right;
+ }
+
+ .grid_1-1{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+ }
+
+ a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: larger;
+ }
+
+ img{
+    border-radius: 22px;
+    min-width: 300px;
+ }
+
+ article{
+    margin-left: 6rem;
+ }
+
+ p{
+    margin-top: 5rem;
+ }
+
+</style>

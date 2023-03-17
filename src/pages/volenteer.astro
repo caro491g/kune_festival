@@ -1,3 +1,27 @@
 ---
+import InfoCard from "../components/InfoCard.astro";
+import InfoCard2 from "../components/InfoCard2.astro";
+import Header from "../components/Header.astro";
 import "../styles/layout.css";
 ---
+
+<Header/>
+
+
+<div class="container">
+<img src="img/VOLENTEER.webp" alt="forsidebillede">
+<div class="centered">VOLENTEER</div>
+</div>
+
+
+<InfoCard2 variant="primary" placement="lefttext"
+imgPath="img/Net2.webp"
+title="VOLENTEER"
+body="Volunteers are at the heart of KUNE Festival and essential to our community. They are the ones who help us realize our vision, and we are continually amazed at the skills, dedication, and enthusiasm they bring to the festival. Volunteering should be a two-way process, and we always aim to create a space where our volunteers can grow, learn and connect with others."
+/>
+
+<InfoCard variant="primary" placement="lefttext"
+imgPath="img/Baenk.webp"
+title="HOW WE WORK"
+body="At KUNE, we strive to create an environment where volunteers feel empowered and their contribution is recognized and appreciated. We offer opportunities for personal and professional development, such as training and workshops, and a chance to meet new people, work with artists, and uniquely experience the festival. Volunteering with KUNE Festival is a way to give back to the community while co-creating and shaping the festival experience with us."
+/>
