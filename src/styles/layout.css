@@ -1,32 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 img {
-    width: 100%;
-    display: block;
-    height: auto;
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 html {
-background-color: #F5F0E3;
+  background-color: #f5f0e3;
 }
 .color1 {
-    color: #090284 ;
-
-
+  color: #090284;
 }
 
-
-
-h1{
-    text-align: center;
-
-    font-family: 'Dance',sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    src: local('Dance'), url('Dance.woff') format('woff');
-
+h1 {
+  font-family: Dance;
+  src: url(Dance.ttf);
+  text-align: center;
 }
