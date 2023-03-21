@@ -4,7 +4,7 @@ const { title, body, imgPath} = Astro.props;
 ---
 <div class="grid_1-1">
 <article>
-<a href="#0">{title}</a>
+<h2>{title}</h2>
 <p>{body}</p>
 </article>
 <figure>
@@ -18,6 +18,7 @@ const { title, body, imgPath} = Astro.props;
 
 <style>
 
+@media (min-width: 701px){
  [data-placement="lefttext"]{
 text-align: left;
 
@@ -30,9 +31,14 @@ text-align: right;
  .grid_1-1{
     display: flex;
     grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    max-width: 900px;
+     place-items: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
  }
 
  a{
@@ -52,7 +58,39 @@ text-align: right;
  }
 
  p{
-    margin-top: 5rem;
+    margin-top: 1rem;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+ }}
+
+ @media (max-width: 700px){
+ a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: larger;
+    margin-top: 20px;
+ }
+
+ img{
+    border-radius: 22px;
+    min-width: 200px;
+ }
+h2{
+   text-align: center;
+   margin-top: 20px;
+}
+
+ p{
+    margin-top: 1rem;
+    line-height: 21px;
+    text-align: right:;
+    max-width: 300px;
+    align-self: center;
+    margin: auto;
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+ }
  }
 
 </style>
