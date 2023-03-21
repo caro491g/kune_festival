@@ -1,5 +1,5 @@
 ---
-const url = "https://khhvghmfzoaeprjccskz.supabase.co/rest/v1/Artist?";
+const url = "https://khhvghmfzoaeprjccskz.supabase.co/rest/v1/Artist";
 const options = {
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtoaHZnaG1mem9hZXByamNjc2t6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3OTAyNDksImV4cCI6MTk5NDM2NjI0OX0.LqNK9UlCBAJbKi1e7sc59yZSImY3rduKvskTQvs3rzY",
@@ -31,9 +31,11 @@ import Shelf from "../components/Shelf.astro";
     <main>
       <h1>LINE UP</h1>
       <Shelf>
-        <ArtistCard title="artistnavn" date="date" />
 
-     {data.map((Artist)=>)}
+
+     {data.map((act)=>{
+      return <ArtistCard Artist={act.Artist} Date={act.Date} img={act.img}/>
+     })}
      
       </Shelf>
     </main>
