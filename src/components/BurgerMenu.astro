@@ -1,20 +1,28 @@
 <button id="burger-menu">
-  Menu
   <span></span>
 </button>
 
+<div class="gem">
+<a href="/index"><img src="img/logo.webp" alt="logo"></a>
 <nav id="menu">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">About Us</a></li>
+    <li><a href="/index">Home</a></li>
+    <li><a href="/info">INFO</a></li>
+    <li><a href="/lineup">LINEUP</a></li>
+    <li><a href="/tickets">TICKETS</a></li>
+    <li><a href="/volunteer">VOLUNTEER</a></li>
   </ul>
 </nav>
-
+</div>
 <script src="../scripts/burger.js"></script>
 
 <style>
-  #burger-menu {
+  @media screen and (min-width: 800px){
+    .gem{display: none;}
+  }
+
+  @media screen and (max-width: 800px) {
+#burger-menu {
     text-indent: -9999px;
     display: none;
     border: none;
@@ -27,9 +35,12 @@
     z-index: 2;
   }
 
-  @media screen and (max-width: 800px) {
+
+
     #burger-menu {
       display: block;
+      left: 300px;
+      margin: -20px;
     }
     #burger-menu span,
     #burger-menu span:before,
@@ -110,5 +121,8 @@
       margin-bottom: 30px;
       text-decoration: none;
     }
+    img{width: 60px;
+    margin-left: 20px;
+    margin-top: -40px}
   }
 </style>

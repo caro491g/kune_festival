@@ -1,13 +1,13 @@
 ---
-const { title, date } = Astro.props;
+const { Artist, Date, img } = Astro.props;
 ---
 
 <li>
   <article>
     <figure class="container">
-      <img src="img/accelerationism.webp" alt="" height="250" width="250" />
-      <div class="centered">{title}</div>
-      <div class="top-right">{date}</div>
+      <img src={`/img/${img}`} alt="" height="250" width="250" />
+      <div class="centered">{Artist}</div>
+      <div class="top-right">{Date}</div>
     </figure>
   </article>
 </li>

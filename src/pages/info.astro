@@ -3,10 +3,13 @@ import InfoCard from "../components/InfoCard.astro";
 import InfoCard2 from "../components/InfoCard2.astro";
 import Header from "../components/Header.astro";
 import Stortbillede from "../components/Stortbillede.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/layout.css";
+import BurgerMenu from "../components/BurgerMenu.astro";
 ---
 
 <Header/>
+<BurgerMenu />
 
 <Stortbillede
 imgPath="img/Infoforside.webp"
@@ -15,8 +18,8 @@ overskrift="INFO"
 
 <InfoCard variant="primary" placement="lefttext"
 imgPath="img/vejvisning.webp"
-title="About US"
-body="Being at KUNE Festival is an immersive experience that blends art, music, and the island’s natural beauty. The location’s secludedness adds to the sense of separation from everyday life. At the same time, the art invites us to engage in open discussions and imagine a world that can be different, making a positive impact over our mentality and worldview. In conjunction with the art."
+title="ABOUT US"
+body="Being at KUNE Festival is an immersive experience that blends art, music, and the islands natural beauty. The locations secludedness adds to the sense of separation from everyday life. At the same time, the art invites us to engage in open discussions and imagine a world that can be different, making a positive impact over our mentality and worldview. In conjunction with the art."
 />
 
 <InfoCard2 variant="primary" placement="lefttext"
@@ -30,3 +33,9 @@ imgPath="img/Faerge.webp"
 title="TRANSPORT"
 body="Traveling to KUNE Festival by boat for a 30-minute journey to an island location adds a unique and significant element to the festival experience. Reaching the festival site by boat separates us from our everyday lives and creates a sense of escape to a new world. The festival island becomes a self-contained microcosm where everyone is living, breathing, and experiencing the festival together."
 />
+
+<br>
+<br>
+<br>
+
+<Footer/>

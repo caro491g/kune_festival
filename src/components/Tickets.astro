@@ -20,6 +20,20 @@ import Button from "../components/Button.astro";
 <Button variant="primary" size="medium" placement="index">WERZ TICKETS</Button>
 
 <style>
+   .pointer {
+    font-size: 3rem;
+    color: #090284;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+
+  .grid_container{
+
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+
+@media (min-width:750px){
   .grid_container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -27,16 +41,9 @@ import Button from "../components/Button.astro";
     align-items: center;
     margin: 0 auto;
   }
-
-  .pointer {
-    font-size: 3rem;
-    color: #090284;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-  }
-
   .text {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
   }
+}
 </style>
