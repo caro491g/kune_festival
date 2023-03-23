@@ -5,8 +5,8 @@ const options = {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtoaHZnaG1mem9hZXByamNjc2t6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3OTAyNDksImV4cCI6MTk5NDM2NjI0OX0.LqNK9UlCBAJbKi1e7sc59yZSImY3rduKvskTQvs3rzY",
   },
 };
-const response = await fetch (url, options);
-const data = await response.json()
+const response = await fetch(url, options);
+const data = await response.json();
 console.log(data);
 import "../styles/layout.css";
 import Header from "../components/Header.astro";
@@ -33,12 +33,11 @@ import BurgerMenu from "../components/BurgerMenu.astro";
     <main>
       <h1>LINE UP</h1>
       <Shelf>
-
-
-     {data.map((act)=>{
-      return <ArtistCard Artist={act.Artist} Date={act.Date} img={act.img}/>
-     })}
-     
+        {
+          data.map((act) => {
+            return <ArtistCard Artist={act.Artist} Date={act.Date} img={act.img} />;
+          })
+        }
       </Shelf>
     </main>
     <Footer />
