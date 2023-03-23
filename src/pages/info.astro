@@ -8,19 +8,33 @@ import Footer from "../components/Footer.astro";
 import BurgerMenu from "../components/BurgerMenu.astro";
 ---
 
-<Header />
-<BurgerMenu />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lineup</title>
+  </head>
+  <body>
+    <Header />
+    <BurgerMenu />
 
-<Stortbillede imgPath="img/Infoforside.webp" overskrift="INFO" />
+    <Stortbillede imgPath="img/Infoforside.webp" overskrift="INFO" />
 
-<InfoCard variant="primary" placement="lefttext" imgPath="img/vejvisning.webp" title="ABOUT US" body="Being at KUNE Festival is an immersive experience that blends art, music, and the islands natural beauty. The locations secludedness adds to the sense of separation from everyday life. At the same time, the art invites us to engage in open discussions and imagine a world that can be different, making a positive impact over our mentality and worldview. In conjunction with the art." />
+    <InfoCard variant="primary" placement="lefttext" imgPath="img/vejvisning.webp" title="ABOUT US" body="Being at KUNE Festival is an immersive experience that blends art, music, and the islands natural beauty. The locations secludedness adds to the sense of separation from everyday life. At the same time, the art invites us to engage in open discussions and imagine a world that can be different, making a positive impact over our mentality and worldview. In conjunction with the art." />
 
-<InfoCard2 variant="primary" placement="lefttext" imgPath="img/hoppe.webp" title="THE LOCATION " body="The island is a decommissioned defense fort built in the 19th century. A unique landmark with historical value, the fort-island was recently renovated and repurposed into a place dedicated to young people and innovative cultural initiatives. It can host 2500 people, 1000 of which could be accommodated in the camping area." />
+    <InfoCard2 variant="primary" placement="lefttext" imgPath="img/hoppe.webp" title="THE LOCATION " body="The island is a decommissioned defense fort built in the 19th century. A unique landmark with historical value, the fort-island was recently renovated and repurposed into a place dedicated to young people and innovative cultural initiatives. It can host 2500 people, 1000 of which could be accommodated in the camping area." />
 
-<InfoCard variant="primary" placement="lefttext" imgPath="img/Faerge.webp" title="TRANSPORT" body="Traveling to KUNE Festival by boat for a 30-minute journey to an island location adds a unique and significant element to the festival experience. Reaching the festival site by boat separates us from our everyday lives and creates a sense of escape to a new world. The festival island becomes a self-contained microcosm where everyone is living, breathing, and experiencing the festival together." />
+    <InfoCard variant="primary" placement="lefttext" imgPath="img/Faerge.webp" title="TRANSPORT" body="Traveling to KUNE Festival by boat for a 30-minute journey to an island location adds a unique and significant element to the festival experience. Reaching the festival site by boat separates us from our everyday lives and creates a sense of escape to a new world. The festival island becomes a self-contained microcosm where everyone is living, breathing, and experiencing the festival together." />
 
-<br />
-<br />
-<br />
+    <br />
+    <br />
+    <br />
 
-<Footer />
+    <Footer />
+  </body>
+</html>
