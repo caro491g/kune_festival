@@ -16,14 +16,13 @@ import Button from "./Button.astro";
     <h2 class="footer_title">Kune Festival 2023</h2>
     <p>Ungdomsøen, 1433 København</p>
     <p>19 - 23th July</p>
-    <Button variant="secondary" size="small" placement="footer">Tickets</Button>
+    <Button variant="secondary" size="small" placement="footer"><a class="cta" href="https://werz.at/c/kune">Tickets</a></Button>
   </div>
 </footer>
 
 <style>
-
-  p{
-    font-family:"Montserrat", sans-serif;
+  p {
+    font-family: "Montserrat", sans-serif;
   }
   footer {
     display: flex;
@@ -64,7 +63,7 @@ import Button from "./Button.astro";
   p {
     line-height: 3.5rem;
     color: #f5f0e3;
-    font-family:"Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   .logo {
@@ -73,5 +72,14 @@ import Button from "./Button.astro";
     width: 80px;
     column-gap: 10px;
     margin: 10px 0px 10px 0px;
+  }
+
+  .cta {
+    color: #090284;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #090284;
   }
 </style>
